@@ -15,8 +15,15 @@ sudo apt install libgnutls28-dev libgoa-backend-1.0-dev libcolord-gtk4-dev libwa
 sudo apt build-dep gnome-control-center -y
 # If above command doesn't run then, you must have missing source packages repo links or source.list -> Do the steps of commented lines otherwise skip
 # Add source lines inside sudo nano /etc/apt/sources.list:
-# deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
-# deb-src http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
+# deb http://deb.debian.org/debian/ bullseye main
+# deb-src http://deb.debian.org/debian/ bullseye main
+
+# deb http://deb.debian.org/debian/ bullseye-updates main
+# deb-src http://deb.debian.org/debian/ bullseye-updates main
+
+# deb http://security.debian.org/debian-security/ bullseye-security main
+# deb-src http://security.debian.org/debian-security/ bullseye-security main
+
 # deb http://ftp.se.debian.org/debian/ buster main
 # deb-src http://ftp.se.debian.org/debian/ buster main
 # deb http://security.debian.org/debian-security buster/updates main
